@@ -1,7 +1,8 @@
 *{margin:0px;box-sizing:border-box;font-family:FiraSans,sans-serif;}
 header{position:fixed;top:0px;left:0px;height:4em;width:100%;box-shadow:0 0 0.2rem #212121;background:#263238;color:#FF4D09;padding-top:.8em;}
 header a{display:block;font-size:1.8em;font-weight:bolder;}
-.logo{display:block;max-width:400px;margin:auto;}
+.logo{display:block;max-width:22em	;height:auto;margin:auto;}
+.ishlogo{width:10em;margin:1em auto;}
 header .flotar-izq{font-size:1em;text-align:center;float:left;transition:0.4s;margin:0.2em 1em;}
 header .flotar-der{text-align:center;float:right;margin-right:.5em;font-family:serif;font-style:italic;font-weight:bolder;letter-spacing:-.1em;}
 .flotar-izq:hover>div{background:#4183C4;}
