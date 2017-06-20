@@ -14,7 +14,7 @@ function cambiar(item){
 	item.classList.toggle("cambio");
 	mostrar("menu");
 }
-
+llenarTabla("apt");
 function llenarTabla(gestor){
 	for(i in gestores){
 		if (i==gestor){
