@@ -1,4 +1,5 @@
 window.addEventListener("load",function(){
+llenarTabla(document.querySelector("#gestores").value);
 document.querySelector("#titulo").addEventListener("click",function(evento){
 if(!confirm("Va a volver al inicio de la aplicación,\nEstá usted seguro?"))evento.preventDefault();});});
 document.querySelector("#gestores").addEventListener("change",function(){llenarTabla(document.querySelector("#gestores").value);});
@@ -14,7 +15,6 @@ function cambiar(item){
 	item.classList.toggle("cambio");
 	mostrar("menu");
 }
-llenarTabla("apt");
 function llenarTabla(gestor){
 	for(i in gestores){
 		if (i==gestor){
