@@ -1,4 +1,5 @@
 window.addEventListener("load",function(){
+llenarTabla(document.querySelector("#gestores").value);
 document.querySelector("#titulo").addEventListener("click",function(evento){
 if(!confirm("Va a volver al inicio de la aplicación,\nEstá usted seguro?"))evento.preventDefault();});});
 document.querySelector("#gestores").addEventListener("change",function(){llenarTabla(document.querySelector("#gestores").value);});
@@ -14,7 +15,6 @@ function cambiar(item){
 	item.classList.toggle("cambio");
 	mostrar("menu");
 }
-llenarTabla("apt");
 function llenarTabla(gestor){
 	for(i in gestores){
 		if (i==gestor){
@@ -46,7 +46,7 @@ function mostrarMensaje(){
 	fondo.style.zIndex="5";
 	fondo.style.width=window.innerWidth+"px";
 	fondo.style.height=window.innerHeight+"px";
-	mensaje.innerHTML="<h2 class='text-center'><a href='https://ishmilan.github.io/cdn/PMH/'>Package Manager Handbook</a></h2><br>Esto es un servicio de <a href='https://colaboratorio.net' target='_blank'>colaboratorio.net</a>.<br><a href='https://colaboratorio.net' target='_blank'><img src='https://colaboratorio.net/wp-content/uploads/2016/12/logo-negro-transparente-400.png' alt='colaboratorio.net' title='colaboratorio.net' class='logo'></a><br>Con licencia <a href='https://github.com/ishmilan/PMH/blob/master/LICENSE' target='_blank'>GPLv3</a>. Autor: <a href='https://ishmilan.github.io/' target='_blank'>Ish Milan</a>.<a href='https://ishmilan.github.io/' target='_blank'><img src='https://ishmilan.github.io/cdn/logo1.png' alt='ishmilan.github.io' title='ishmilan' class='logo ishlogo'></a><br>Con la colaboración de <a href='https://porfiriopaiz.github.io/blog/' target='_blank'>Porfirio Andrés Páiz Carrasco</a><br>Click aquí para <a href='#' id='cerrar'>cerrar</a> o fuera de la ventana.";
+	mensaje.innerHTML="<h2 class='text-center'><a href='https://ishmilan.github.io/cdn/PMH/'>Package Manager Handbook</a></h2><br>Esto es un servicio de <a href='https://colaboratorio.net' target='_blank'>colaboratorio.net</a>.<br><a href='https://colaboratorio.net' target='_blank'><img src='https://colaboratorio.net/wp-content/uploads/2016/12/logo-negro-transparente-400.png' alt='colaboratorio.net' title='colaboratorio.net' class='logo'></a><br>Con licencia <a href='https://github.com/ishmilan/PMH/blob/master/LICENSE' target='_blank'>GPLv3</a>. Autor: <a href='https://ishmilan.github.io/' target='_blank'>Ish Milan</a>.<a href='https://ishmilan.github.io/' target='_blank'><img src='https://avatars0.githubusercontent.com/u/9059414?v=3&s=256' alt='ishmilan.github.io' title='ishmilan' class='logo ishlogo'></a><br>Con la colaboración de <a href='https://porfiriopaiz.github.io/blog/' target='_blank'>Porfirio Andrés Páiz Carrasco</a><br>Click aquí para <a href='#' id='cerrar'>cerrar</a> o fuera de la ventana.";
 	var cabecera=document.getElementsByTagName("header")[0];
 	document.body.insertBefore(mensaje,cabecera);
 	document.body.insertBefore(fondo,cabecera);
