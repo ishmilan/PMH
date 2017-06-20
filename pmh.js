@@ -1,7 +1,7 @@
 window.addEventListener("load",function(){
-document.getElementById("titulo").addEventListener("click",function(evento){
+document.querySelector("#titulo").addEventListener("click",function(evento){
 if(!confirm("Va a volver al inicio de la aplicación,\nEstá usted seguro?"))evento.preventDefault();});});
-
+document.querySelector("#gestores").addEventListener("change",function(){llenarTabla(document.querySelector("#gestores").value);});
 function mostrar(item1){
 	if (document.getElementById(item1).style.display == "flex"){
 		document.getElementById(item1).style.display = "none";
