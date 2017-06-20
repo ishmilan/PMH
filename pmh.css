@@ -1,3 +1,4 @@
+@font-face{font-family:"Akashi";src:url("http://ishmilan.github.io/cdn/fonts/Akashi.ttf");}
 *{margin:0px;box-sizing:border-box;font-family:FiraSans,sans-serif;}
 header{position:fixed;top:0px;left:0px;height:4em;width:100%;box-shadow:0 0 0.2rem #212121;background:#263238;color:#FF4D09;padding-top:.8em;}
 header a{display:block;font-size:1.8em;font-weight:bolder;}
@@ -29,8 +30,9 @@ tbody>tr:nth-child(2n){background:#F5F5F5;}
 td{height:1em;width:1em;border-color:#999999}
 select,input{width:100%;margin:0.5em auto;padding:0.5em;}
 .command{color:#263238;font-weight:bold;}
+#titulo{font-family:"Akashi";font-size:38px;letter-spacing:1px;text-shadow: -5px -5px #FF4D09,-5px 0px #FF4D09,-5px 5px #FF4D09,0px 5px #FF4D09,-5px 5px #FF4D09,5px 5px #FF4D09,5px 0px #FF4D09,5px -5px #FF4D09,0px -5px #FF4D09;}
 code{font-family:monospace;font-weight:bold;font-size:1.1em;}
-#scroll-top{display:block;position:fixed;bottom:-80px;right:30px;background-color:#FF4D09;color:#F5F5F5;font-size: 28px;border-radius: 50%;font-weight: bolder;text-decoration: none;opacity: 1;padding: 13px;width: 60px;height: 60px;text-align: center;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14),0 3px 2px -2px rgba(0,0,0,0.12),0 1px 6px 0 rgba(0,0,0,0.2);transition: all .4s;transform: rotate(-90deg);}
+#scroll-top{font-family:"Akashi";display:block;position:fixed;bottom:-80px;right:30px;background-color:#FF4D09;color:#F5F5F5;font-size: 28px;border-radius: 50%;font-weight: bolder;text-decoration: none;opacity: 1;padding: 13px;width: 60px;height: 60px;text-align: center;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14),0 3px 2px -2px rgba(0,0,0,0.12),0 1px 6px 0 rgba(0,0,0,0.2);transition: all .4s;transform: rotate(-90deg);}
 #scroll-top:hover{background-color:#4183C4;}
 @media(max-width:700px){html{font-size:1em;}body{background-color:#FEFEFE;}nav,ul{padding:0px;}section{border:none;box-shadow:none;}header~section{margin-top:4rem}header .logo{height:5.5em;padding-top:.5em;}}
 @media(max-width:490px){#titulo{font-size: 1.5em;padding-top: 0.15em;}}
